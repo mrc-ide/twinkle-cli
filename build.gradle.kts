@@ -16,12 +16,16 @@ repositories {
 dependencies {
     implementation("com.github.ajalt.clikt:clikt:4.2.1")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.1")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.3")
 }
 
-tasks.test {
+tasks.withType<Test> {
+    // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(17)
 }
