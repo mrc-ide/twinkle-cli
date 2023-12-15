@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.21"
     application
+    id("io.gitlab.arturbosch.detekt") version "1.23.3"
 }
 
 group = "twinklecli"
