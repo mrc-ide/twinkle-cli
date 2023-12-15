@@ -20,6 +20,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Smoke test
-        run: ./gradlew :run --args="list"
+        run: ./gradlew :run --args="listx"
       - name: Lint
         run: ./gradlew :detekt

@@ -1,3 +1,5 @@
+import io.gitlab.arturbosch.detekt.Detekt
+
 plugins {
     kotlin("jvm") version "1.9.21"
     application
@@ -25,4 +27,9 @@ kotlin {
 
 application {
     mainClass = "twinklecli.MainKt"
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    config = files("$projectDir/config/detekt.yml")
 }
