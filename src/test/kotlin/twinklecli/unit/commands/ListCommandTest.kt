@@ -1,4 +1,4 @@
-package unit.commands
+package twinklecli.unit.commands
 
 import com.github.ajalt.clikt.testing.test
 import org.junit.jupiter.api.Test
