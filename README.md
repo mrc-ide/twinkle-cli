@@ -12,6 +12,6 @@ Args should specify a command first then the args for the command.
 Use `./gradlew :run --args="-h"` to see available commands or `./gradlew :run --args="[COMMAND] -h"`
 to see usage for a command.
 
-## Linting=
+## Linting
 
 Run detekt linting with `./gradlew :detekt`
