@@ -1,0 +1,9 @@
+set -ex
+ROOT=$(realpath $(dirname $0)/..)
+
+docker run --rm \
+    -v $ROOT/migrations/sql:/flyway/sql \
+    -v $ROOT/db:/flyway/db \
+    flyway/flyway \
+    -url=jdbc:sqlite:/flyway/db/twinkle.sqlite3 \
+    migrate
